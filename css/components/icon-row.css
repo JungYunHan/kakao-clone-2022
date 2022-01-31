@@ -17,3 +17,17 @@
 .icon-row__icon span {
     margin-top: 18px;
 }
+
+@keyframes focusIconBigger{
+    from {
+        transform: none;
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+    
+.icon-row__icon:hover i {
+    will-change: transform;
+    animation: focusIconBigger 0.5s ease-in-out forwards;
+}

@@ -38,3 +38,30 @@
     font-size: 32px;
     color: white;
 }
+
+@keyframes focusAppIcon {
+    from {
+        color: white;
+    }
+    to {
+        color: brown;
+    }
+}
+
+.more-suggestions__icon-image:hover i {
+    animation: focusAppIcon 0.8s linear forwards;
+}
+
+.more-screen-header .screen-header__icons {
+    position: relative;
+}
+
+.header__new-one {
+    background-color: tomato;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+}
